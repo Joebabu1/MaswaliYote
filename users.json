@@ -1,0 +1,12 @@
+[
+  {
+    "username": "joebb",
+    "password": "5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5",
+    "role": "admin"
+  },
+  {
+    "username": "student1",
+    "password": "509e87a6c45ee0a3c657bf946dd6dc43d7e5502143be195280f279002e70f7d9",
+    "role": "student"
+  }
+]

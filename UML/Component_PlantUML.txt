@@ -1,0 +1,15 @@
+@startuml
+
+!define DATABASE [Database]
+!define QUIZ_SYSTEM [Quiz System]
+!define ADMIN_MODULE [Admin Module]
+!define STUDENT_MODULE [Student Module]
+!define ENCRYPTION_MODULE [Encryption Module]
+
+[User Interface] --> [QUIZ_SYSTEM]
+[QUIZ_SYSTEM] --> [ADMIN_MODULE]
+[QUIZ_SYSTEM] --> [STUDENT_MODULE]
+[QUIZ_SYSTEM] --> [DATABASE]
+[QUIZ_SYSTEM] --> [ENCRYPTION_MODULE]
+
+@enduml

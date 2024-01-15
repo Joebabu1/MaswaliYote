@@ -1,0 +1,48 @@
+@startuml
+
+!define ICONURL https://www.iconfinder.com/icons/2990871/download/svg/64
+
+!define ADMIN_IMAGE [![](ICONURL)]
+!define STUDENT_IMAGE [![](ICONURL)]
+
+[*] --> (Login)
+
+(Choose User Type) --> (Login) : Admin
+(Choose User Type) --> (Login) : Student
+
+(Login) --> (Home)
+
+state Home {
+  (Admin Menu) --> (Manage Users)
+  (Admin Menu) --> (Manage Quizzes)
+  (Admin Menu) --> (View Quiz Results)
+  (Admin Menu) --> (Logout)
+
+  state "Manage Users" {
+    (Create User) --> (View Users)
+    (Update User) --> (View Users)
+    (Delete User) --> (View Users)
+  }
+
+  state "Manage Quizzes" {
+    (Create Quiz) --> (View Quizzes)
+    (Update Quiz) --> (View Quizzes)
+    (Delete Quiz) --> (View Quizzes)
+  }
+}
+
+(Home) --> (Take Quiz)
+(Home) --> (View Results)
+(Home) --> (Logout)
+
+state "Take Quiz" {
+  (Select Quiz) --> (Start Quiz)
+  (Answer Questions) --> (Submit Answers)
+}
+
+(Select Quiz) --> (Home)
+(Start Quiz) --> (Answer Questions)
+(Answer Questions) --> (Submit Answers)
+(Submit Answers) --> (View Results)
+
+@enduml

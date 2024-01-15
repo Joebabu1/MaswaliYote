@@ -1,0 +1,41 @@
+@startuml
+
+class User {
+  -username: String
+  -password: String
+  -role: String
+}
+
+class Admin {
+  -manageUsers(): void
+  -manageQuizzes(): void
+  -viewQuizResults(): void
+}
+
+class Student {
+  -takeQuiz(): void
+  -viewResults(): void
+}
+
+class Quiz {
+  -quizId: int
+  -title: String
+  -questions: List<Question>
+}
+
+class Question {
+  -questionId: int
+  -text: String
+  -options: List<String>
+  -correctAnswer: String
+}
+
+User --|> Admin
+User --|> Student
+
+Admin --|> User
+Student --|> User
+
+Quiz -- Question : Contains >
+
+@enduml

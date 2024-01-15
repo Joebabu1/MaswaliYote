@@ -1,0 +1,46 @@
+[
+  {
+    "title": "General Knowledge",
+    "questions": [
+      {
+        "text": "What is the Capital city of Germany",
+        "options": [
+          "Munich",
+          "Berlin",
+          "Hamburg",
+          "Kiel"
+        ],
+        "correct_option": 2
+      },
+      {
+        "text": "How many countries are members of the EU",
+        "options": [
+          "20",
+          "25",
+          "27",
+          "30"
+        ],
+        "correct_option": 3
+      }
+    ]
+  },
+  {
+    "title": "How many planets are there?",
+    "questions": []
+  },
+  {
+    "title": "Maths",
+    "questions": [
+      {
+        "text": "12+13",
+        "options": [
+          "20",
+          "25",
+          "35",
+          "0"
+        ],
+        "correct_option": 2
+      }
+    ]
+  }
+]
